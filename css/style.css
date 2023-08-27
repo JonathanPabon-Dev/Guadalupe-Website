@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=Poppins:wght@400;500;600;700&display=swap");
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80px;
+}
+.header__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.header__logo {
+  font-family: "MonteCarlo", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+.header .navbar__list {
+  display: flex;
+  gap: 15px;
+}
+.header .navbar__list--item-link {
+  padding: 5px 15px;
+  color: #d5d3e1;
+}
+.header .navbar__list--item-link:hover, .header .navbar__list--item-link:focus, .header .navbar__list--item-link:focus-within, .header .navbar__list--item-link.active {
+  border-bottom: 3px solid #fff;
+  color: #fff;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(90, 69, 115, 0.6), rgba(142, 131, 170, 0.4)), url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2f1a3b;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

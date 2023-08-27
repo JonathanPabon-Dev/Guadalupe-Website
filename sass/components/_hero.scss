@@ -1,0 +1,9 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, getColor('bg-color3-o60'), getColor('bg-color1-o40')),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,16 @@
+$colors: (
+  'white': #fff,
+  'primary': #2f1a3b,
+  'primary-o20': rgba(47, 26, 59, 0.2),
+  'light-font': #d5d3e1,
+  'font-color2': #aea9c5,
+  'bg-color1': #8e83aa,
+  'bg-color1-o40': rgba(142, 131, 170, 0.4),
+  'bg-color2': #72628e,
+  'bg-color3': #5a4573,
+  'bg-color3-o60': rgba(90, 69, 115, 0.6),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
