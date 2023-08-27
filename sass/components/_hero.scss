@@ -6,4 +6,45 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @include centered;
+  &__container {
+    @include centered(flex-end);
+  }
+  &__card {
+    right: 60px;
+    width: 600px;
+    padding: 60px 40px 40px;
+    border-radius: 10px;
+    background-color: getColor('bg-color3-o60');
+    backdrop-filter: blur(10px);
+    color: getColor('white');
+    &--subtitle {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: getColor('light-font');
+    }
+    &--title {
+      margin-top: 5px;
+      font-family: 'MonteCarlo', cursive;
+      font-size: 120px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    &--text {
+      margin: 20px 0 45px;
+      color: getColor('light-font');
+    }
+    &--btn {
+      padding: 25px 72px;
+      border: none;
+      border-radius: 5px;
+      background-color: getColor('bg-color1');
+      color: getColor('white');
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
 }

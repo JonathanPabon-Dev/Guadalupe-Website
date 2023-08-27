@@ -26,7 +26,7 @@
   color: #d5d3e1;
 }
 .header .navbar__list--item-link:hover, .header .navbar__list--item-link:focus, .header .navbar__list--item-link:focus-within, .header .navbar__list--item-link.active {
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #5a4573;
   color: #fff;
 }
 
@@ -37,6 +37,51 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero__card {
+  right: 60px;
+  width: 600px;
+  padding: 60px 40px 40px;
+  border-radius: 10px;
+  background-color: rgba(90, 69, 115, 0.6);
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+.hero__card--subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #d5d3e1;
+}
+.hero__card--title {
+  margin-top: 5px;
+  font-family: "MonteCarlo", cursive;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.hero__card--text {
+  margin: 20px 0 45px;
+  color: #d5d3e1;
+}
+.hero__card--btn {
+  padding: 25px 72px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8e83aa;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 * {
@@ -64,6 +109,11 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  border-style: none;
   cursor: pointer;
 }
 
