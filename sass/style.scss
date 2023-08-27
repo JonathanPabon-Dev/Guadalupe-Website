@@ -2,9 +2,6 @@
 @import 'utils/colors';
 @import 'utils/mixins';
 
-@import 'components/header';
-@import 'components/hero';
-
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +18,10 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 70%;
+  @include tablet {
+    width: 90%;
+  }
 }
 
 .section {
@@ -35,5 +35,9 @@ a {
 
 .btn {
   border-style: none;
+  background: none;
   cursor: pointer;
 }
+
+@import 'components/header';
+@import 'components/hero';

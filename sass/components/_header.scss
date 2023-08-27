@@ -1,4 +1,8 @@
 .header {
+  @include mobile {
+    height: 100vh;
+  }
+
   position: absolute;
   top: 0;
   width: 100%;
@@ -6,25 +10,64 @@
   &__container {
     height: 100%;
     @include centered(space-between);
-    padding: 0 30px;
   }
   &__logo {
     font-family: 'MonteCarlo', cursive;
     font-size: 40px;
     color: getColor('white');
   }
+  &__open {
+    display: none;
+  }
+
   .navbar {
+    @include mobile {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 20px;
+      background-color: getColor('bg-color1');
+    }
+
+    &__btn--close {
+      display: none;
+      font-size: 25px;
+      color: getColor('light-font');
+      &:hover,
+      &:focus,
+      &:focus-within {
+        color: getColor('primary');
+      }
+    }
+
     &__list {
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 2rem;
+      }
+
       display: flex;
       gap: 15px;
       &--item {
         &-link {
           padding: 5px 15px;
+          font-weight: 500;
+          letter-spacing: 0.06em;
           color: getColor('light-font');
           &:hover,
           &:focus,
           &:focus-within,
           &.active {
+            @include mobile {
+              border: none;
+              color: getColor('primary');
+            }
+
             border-bottom: 3px solid getColor('bg-color3');
             color: getColor('white');
           }

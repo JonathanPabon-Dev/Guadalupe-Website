@@ -1,3 +1,5 @@
+@import 'media-queries';
+
 @mixin centered($justify: center) {
   display: flex;
   align-items: center;

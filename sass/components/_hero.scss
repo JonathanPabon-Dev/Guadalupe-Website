@@ -1,4 +1,8 @@
 .hero {
+  @include tablet {
+    @include centered;
+    background-position: left;
+  }
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to bottom, getColor('bg-color3-o60'), getColor('bg-color1-o40')),
@@ -8,6 +12,9 @@
   background-repeat: no-repeat;
   @include centered;
   &__container {
+    @include tablet {
+      @include centered;
+    }
     @include centered(flex-end);
   }
   &__card {
