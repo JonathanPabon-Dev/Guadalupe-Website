@@ -173,7 +173,7 @@ a {
   .hero {
     display: flex;
     align-items: end;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background-image: linear-gradient(to bottom, rgba(90, 69, 115, 0.6), rgba(142, 131, 170, 0.4)), url(../images/hero-bg-mobile.jpg);
   }
 }
@@ -230,6 +230,30 @@ a {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__rights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px 20px;
+  gap: 30px;
+  color: #fff;
+  border-top: 1px solid #d5d3e1;
+  text-shadow: 1px 1px 5px #2f1a3b;
+}
+.footer__rights--link {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

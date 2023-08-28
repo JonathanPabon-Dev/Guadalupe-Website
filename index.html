@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Guadalupe - Inicio</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -15,11 +19,11 @@
       <div class="header__container container">
         <a href="./index.html" class="header__logo">G</a>
         <button id="navbar-open" class="navbar__btn--open btn" type="button">
-          <iconify-icon icon="ci:hamburger-md"></iconify-icon>
+          <span class="fa fa-bars"></span>
         </button>
         <nav id="navbar" class="navbar">
           <button id="navbar-close" class="navbar__btn--close btn" type="button">
-            <iconify-icon icon="ic:round-close"></iconify-icon>
+            <span class="fa fa-times"></span>
           </button>
           <ul class="navbar__list list">
             <li class="navbar__list--item">
@@ -53,8 +57,16 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__rights">
+          <p class="footr__rights--text">&copy; Copyright 2023</p>
+          <a class="footer__rights--link link" href="https://github.com/JonathanPabon-Dev"
+            ><span class="fa fa-github"></span> JonathanPabon-Dev</a
+          >
+        </div>
+      </div>
+    </footer>
     <script src="./js/main.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   </body>
 </html>

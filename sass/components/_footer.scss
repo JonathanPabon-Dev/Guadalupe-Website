@@ -1,0 +1,19 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  &__container {
+    @include centered;
+  }
+  &__rights {
+    @include centered;
+    padding: 10px 30px 20px;
+    gap: 30px;
+    color: getColor('white');
+    border-top: 1px solid getColor('light-font');
+    text-shadow: 1px 1px 5px getColor('primary');
+    &--link {
+      color: getColor('white');
+    }
+  }
+}
