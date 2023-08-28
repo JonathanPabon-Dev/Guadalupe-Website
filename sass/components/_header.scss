@@ -1,23 +1,19 @@
 .header {
-  @include mobile {
-    height: 100vh;
-  }
-
+  z-index: 1;
   position: absolute;
   top: 0;
   width: 100%;
   height: 80px;
   &__container {
-    height: 100%;
+    height: 80px;
     @include centered(space-between);
   }
   &__logo {
+    @include mobile {
+    }
     font-family: 'MonteCarlo', cursive;
     font-size: 40px;
     color: getColor('white');
-  }
-  &__open {
-    display: none;
   }
 
   .navbar {
@@ -26,15 +22,51 @@
       top: 0;
       right: 0;
       bottom: 0;
+      left: 0;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      padding: 20px;
       background-color: getColor('bg-color1');
+      font-size: 16px;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &.visible {
+      @include mobile {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    &__btn--open {
+      @include mobile {
+        display: block;
+      }
+      display: none;
+      font-size: 25px;
+      color: getColor('light-font');
+      &:hover,
+      &:focus,
+      &:focus-within {
+        color: getColor('primary');
+      }
     }
 
     &__btn--close {
-      display: none;
+      @include mobile {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+      }
+      &.visible {
+        @include mobile {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      visibility: hidden;
+      opacity: 0;
       font-size: 25px;
       color: getColor('light-font');
       &:hover,
@@ -47,8 +79,9 @@
     &__list {
       @include mobile {
         flex-direction: column;
-        align-items: flex-end;
-        padding: 2rem;
+        align-items: center;
+        gap: 50px;
+        padding-top: 10px;
       }
 
       display: flex;
