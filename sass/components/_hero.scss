@@ -30,11 +30,12 @@
   }
   &__card {
     right: 60px;
-    width: 600px;
+    max-width: 600px;
     padding: 60px 40px 40px;
     border-radius: 10px;
     background-color: getColor('bg-color3-o60');
     backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px 0px getColor('primary');
     color: getColor('white');
     &--subtitle {
       font-size: 16px;
@@ -45,7 +46,7 @@
     }
     &--title {
       @include mobile {
-        font-size: 100px;
+        font-size: 80px;
       }
       margin-top: 5px;
       font-family: 'MonteCarlo', cursive;
